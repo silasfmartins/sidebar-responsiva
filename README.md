@@ -8,7 +8,7 @@
 
 
 ## 💻 Projeto
-Projeto que imita a interface do Figma Jam, sendo assim um whiteboard.
+A aplicação é uma sidebar que aparece ou diminui conforme a interação do usuário ou o formato de tela.
 
 ## 🔃 Requisitos para utilizar
 
@@ -16,28 +16,14 @@ Projeto que imita a interface do Figma Jam, sendo assim um whiteboard.
 
 ## ✨ Tecnologias
 
--   [ x ] Typescript
--   [ x ] React
--   [ x ] Tailwind CSS
--   [ x ] Vite
+-   [ x ] HTML
+-   [ x ] CSS
 
 
 ## :hammer_and_wrench: Features 
 
--   [ ] Blocos podem ser movidos.
--   [ ] Blocos podem ser redimensionados.
--   [ ] É possível criar novos blocos.
--   [ ] Os blocos podem se conectar.
-
-
-## 📲 Executando o projeto
-
-Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
-Em seguida, inicie o projeto.
-
-```cl
-npm run dev
-```
+-   [ ] Sidebar muda conforme tamanho da tela.
+-   [ ] A interação do usuário muda a Sidebar.
 
 ## 🆚 Versionamento / Versioning
 
@@ -49,12 +35,12 @@ Esse projeto não possui um sistema de versionamento.
 
 ## 👨‍💻 Contribuir / Contributing
 
-Deseja contribuir com o projeto? [Passo a passo para contribuir](https://github.com/silasfmartins/whiteboard/blob/master/Contributing.md)
+Deseja contribuir com o projeto? [Passo a passo para contribuir](https://github.com/silasfmartins/sidebar-responsiva/blob/master/Contributing.md)
 
 ## 💿 Histórico / History
 
-Consulte [Releases](https://github.com/silasfmartins/whiteboard/releases) para ter um changelog completo.
+Consulte [Releases](https://github.com/silasfmartins/sidebar-responsiva/releases) para ter um changelog completo.
 
 ## 📄 Licença do Projeto/License
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/silasfmartins/whiteboard/blob/main/LICENSE) © Silas Martins para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/silasfmartins/sidebar-responsiva/blob/main/LICENSE) © Silas Martins para mais detalhes.
