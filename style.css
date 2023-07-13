@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #121212;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #18C29C;
+  padding-top: 1.5rem;
+  gap: 1rem;
+  width: 15.5rem;
+}
+
+.switcher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+}
+
+.switcher-label {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 3rem;
+  height: 0.5rem;
+  background: #084537;
+  justify-content: space-around;
+  gap: 3rem;
+  margin-top: 0.25rem;
+}
+
+.checkbox:checked + label .ball {
+  margin-left: 13rem;
+  transform: translateX(4px);
+}
+
+.ball {
+  border-radius: 100%;
+  padding: 1rem;
+  background: #F1F1F1;
+  transition: transform 0.2s linear;
+  cursor: pointer;
+  position: absolute;
+  margin-right: 7rem;
+}
+
+body.light {
+  background: white;
+}
+
+body.light h1 {
+  color: black;
+}
+
+aside img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#menu {
+  cursor: pointer;
+}
+
+#menu-open {
+  display: flex;
+  justify-content: space-around;
+}
+
+#logo {
+  width: 4rem;
+  height: 1.57rem;
+}
+
+.open-search {
+  display: flex;
+  align-items: center;
+  background: #D9D9D9;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  margin-left: 0.875rem;
+  margin-right: 0.875rem;
+}
+
+#perfil {
+  display: flex;
+  align-items: center;
+  background: #D9D9D9;
+  padding: 0.75rem;
+  width: 15.5rem;
+  height: 3.75rem;
+  position: fixed;
+  bottom: 0;
+}
+
+.open {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  margin-left: 0.875rem;
+  margin-right: 0.875rem;
+}
+
+#search {
+  border-radius: 0.75rem;
+}
+
+span {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 0.75rem;
+}
+
+main {
+  position: absolute;
+  top: 1.155rem;
+  margin-left: 16.5rem;
+}
+
+#avatar {
+  border-radius: 0.75rem;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+#user_name_1 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#user_name_2 {
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.icon-moonStar {
+  display: none;
+}
+
+#check:checked ~ aside span {
+  display: none;
+}
+
+#check:checked ~ aside #logo {
+  display: none;
+}
+
+#check:checked ~ aside #avatar {
+  display: none;
+}
+
+#check:checked ~ aside .open-search {
+  background: none;
+}
+
+#check:checked ~ aside {
+  width: 4.75rem;
+}
+
+#check:checked ~ aside #perfil {
+  width: 4.8rem;
+}
+
+#check:checked ~ aside #log-out {
+  margin-left: 0.75rem;
+}
+
+#check:checked ~ main {
+  margin-left: 6.5rem;
+}
+
+#check:checked ~ aside .icon-sun {
+  display: none;
+}
+
+#check:checked ~ aside .icon-moonStar {
+  display: block;
+}
+
+#check:checked ~ aside .icon-moon {
+  display: none;
+}
+
+#check:checked ~ aside .ball {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (width < 920px) {
+  #logo, span, avatar {
+    display: none;
+  }
+  aside {
+    width: 4.75rem;
+  }
+  main {
+    margin-left: 6.5rem;
+    border-radius: 0rem;
+  }
+  .open-search {
+    padding: 0;
+    background: none;
+    margin-left: 3.5rem;
+    margin-right: 0rem;
+  }
+  #perfil {
+    padding: 0;
+    background: none;
+  }
+  #search {
+    background: #D9D9D9 url('./assets/images/search.svg');
+    padding: 1.5rem;
+    margin-left: -2.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #log-out {
+    background: #D9D9D9 url('./assets/images/log-out.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2.4rem;
+  }
+
+  #avatar {
+    display: none;
+  }
+
+  #check:checked ~ aside .icon-sun {
+    display: block;
+  }
+  
+  #check:checked ~ aside .icon-moonStar {
+    display: none;
+  }
+  
+  #check:checked ~ aside .icon-moon {
+    display: block;
+  }
+  
+  #check:checked ~ aside .ball {
+    display: block;
+  }
+
+  #check ~ aside .icon-sun {
+    display: none;
+  }
+  
+  #check ~ aside .icon-moonStar {
+    display: block;
+  }
+  
+  #check ~ aside .icon-moon {
+    display: none;
+  }
+  
+  #check ~ aside .ball {
+    display: none;
+  }
+
+  #check:checked ~ aside span {
+    display: flex;
+  }
+
+  #check:checked ~ aside #menu-open {
+    display: flex;
+    gap: 3rem;
+  }
+
+  #check:checked ~ aside #logo {
+    display: flex;
+  }
+
+  #check:checked ~ aside #avatar {
+    display: flex;
+  }
+  
+  #check:checked ~ aside .open-search {
+    margin-left: 3.5rem;
+  }
+  
+  #check:checked ~ aside {
+    width: 15.5rem;
+  }
+  
+  #check:checked ~ aside #perfil {
+    display: flex;
+    align-items: center;
+    background: #D9D9D9;
+    padding: 0.75rem;
+    width: 15.5rem;
+    height: 4.75rem;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  #check:checked ~ main {
+    margin-left: 16.5rem;
+  }
+}
+
+:root {
+  scrollbar-color: #8F8F8F #374151 ;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background: #374151;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #8F8F8F;
+  border-radius: 14px;
+}

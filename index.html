@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Sidebar Responsiva</title>
+</head>
+<body>
+  <input type="checkbox" id="check">
+  <aside>
+    <div id="menu-open">
+      <img id="logo" src="./assets/images/logo.svg" alt="logo">
+      <label for="check">
+        <img id="menu" src="./assets/images/menu.svg" alt="Menu">
+      </label>
+    </div>
+    <div class="aside-props">
+      <div class="open-search">
+        <img id="search" src="./assets/images/search.svg" alt="Search - Pesquisa">
+        <span>Buscar</span>
+      </div>
+      <div class="open">
+        <img src="./assets/images/grid.svg" alt="Dashboard">
+        <span>Dashboard</span>
+      </div>
+      <div class="open">
+        <img src="./assets/images/pet.svg" alt="Pets">
+        <span>Pets</span>
+      </div>
+      <div class="open">
+        <img src="./assets/images/user.svg" alt="Clientes - User">
+        <span>Clientes</span>
+      </div>
+      <div class="open">
+        <img src="./assets/images/vet.svg" alt="Veterinários - Veterinarians">
+        <span>Vets</span>
+      </div>
+      <div class="open">
+        <img src="./assets/images/settings.svg" alt="Settings - Configurações">
+        <span>Ajustes</span>
+      </div>
+      <div id="perfil">
+        <img id="avatar" src="./assets/images/photo.jpg" alt="Avatar">
+        <div>
+          <span id="user_name_1">Eleanor Pena</span>
+          <span id="user_name_2">Veterinária</span>
+        </div>
+        <img id="log-out" src="./assets/images/log-out.svg" alt="Log Out">
+      </div> 
+    </div>
+    <div class="switcher">
+      <input type="checkbox" class="checkbox" id="checkbox">
+      <label class="switcher-label" for="checkbox">
+        <img class="icon-sun" width="20" src="./assets/images/sun.svg" alt="Sun - Sol">
+        <img class="icon-moon" width="20" src="./assets/images/moon.svg" alt="Moon - Lua">
+        <img class="icon-moonStar" width="20" src="./assets/images/moon-star.svg" alt="Moon - Lua">
+        <div class="ball" />
+      </label>
+    </div>
+  </aside>
+  <main>
+    <h1>Dashboard</h1>
+  </main>
+</body>
+<script src="./script.js"></script>
+</html>
