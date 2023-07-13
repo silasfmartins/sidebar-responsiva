@@ -18,7 +18,7 @@ A aplicação é uma sidebar que aparece ou diminui conforme a interação do us
 
 -   [ x ] HTML
 -   [ x ] CSS
-
+-   [ x ] Javascript
 
 ## :hammer_and_wrench: Features 
 
@@ -31,7 +31,7 @@ Esse projeto não possui um sistema de versionamento.
 
 ## 🆙 Projeto no ar
 
-É possível acessar a aplicação através da URL: https://whiteboard-ten.vercel.app/ .
+É possível acessar a aplicação através da URL: https://silasfmartins.github.io/sidebar-responsiva/ .
 
 ## 👨‍💻 Contribuir / Contributing
 
